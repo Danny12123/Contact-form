@@ -3,14 +3,14 @@ import "./App.css";
 
 const Contacts = ({contact}) => {
   return (
-    <div>
+    <div id='contact'>
         <>
             {contact.map((item, index) => {
                 return (
                 <div className='contact-blog' key={index}>
-                    <h2>{item.username}</h2>
-                    <h2>{item.contactNumber}</h2>
-                    <h2>{item.location}</h2>
+                    <h2>Name: {item.username}</h2>
+                    <h2>Number: {item.phone}</h2>
+                    <h2>Location: {item.location}</h2>
                 </div>
                 )
             })}

@@ -1,36 +1,21 @@
 .App {
   text-align: center;
-
+  margin: 0;
+  background-color: #eee ;
+}
+#contact {
+  background-color: #777;
+  margin: 20px 50px;
 }
 .contact-blog {
-  width: 40%;
-  height: inherit;
-
+  text-align: center;
   display: flex;
-  margin: 50px auto;
+  padding: 0px 20px;
+  justify-content: space-between;
 }
-.contact-blog h2 {
-  margin: 5px;
-}
-#Card {
-  background-color: #ccc;
-  width: inherit;
-  height: inherit;
-  margin: auto;
-  padding: 15px;
-}
-label {
-  display: flex;
-}
-input {
-  width: 50%;
-  padding: 8px;
-  border: none;
-  border-bottom: #000 2px solid;
-  border-left: #000 2px solid;
+.Card form input {
+  width: 70%;
+  padding: 10px;
   outline: none;
-}
-button {
-  padding: 7px;
-  margin: 10px;
+  border: none;
 }
