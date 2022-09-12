@@ -1,11 +1,14 @@
 import React from 'react';
 import "./App.css";
-
-const Contacts = ({contact}) => {
+import { useSelector } from 'react-redux';
+const Contacts = (props) => {
+  const {users} = useSelector((state) => {
+    return state;
+  })
   return (
     <div id='contact'>
         <>
-            {contact.map((item, index) => {
+            {users.map((item, index) => {
                 return (
                 <div className='contact-blog' key={index}>
                     <h2>Name: {item.username}</h2>

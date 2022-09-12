@@ -5,6 +5,15 @@ let initialState = {users:[
 
 
 const Reducer = (state = initialState, action) => {
-    return state;
+    switch (action.type) {
+        case "ADD_NEWUSER":
+            return {...state, users: [...state.users, action.payload]}
+            break;
+    
+        default:
+            return state;
+    }
+
+    
 }
 export default Reducer

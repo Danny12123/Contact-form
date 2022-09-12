@@ -10,8 +10,8 @@ import './App.css';
 function App() {
 
   const [contact, setContact] = useState([
-    {username: "Eric", contactNumber:" 0544545254", location: "Accra"},
-    {username: "John", contactNumber: "0204352344", location: "Wa"}
+    // {username: "Eric", contactNumber:" 0544545254", location: "Accra"},
+    // {username: "John", contactNumber: "0204352344", location: "Wa"}
   ]);
 
   const addContact = (user) => {
@@ -21,9 +21,7 @@ function App() {
 
   return (
     <div className='App'>
-      <Contact 
-      contact={contact}
-      />
+      <Contact contact={contact} />
       <ContactFormFu addContact={addContact}/>
           
     </div>

@@ -1,5 +1,6 @@
 import React, {useState} from 'react';
-
+import { connect } from 'react-redux';
+import { ADD_USER } from './Action/Action';
 
 const ContactFormFu = (props) => {
     const [username, setUsername] = useState("");
@@ -8,7 +9,7 @@ const ContactFormFu = (props) => {
     
     const onCreate = (e) => {
         e.preventDefault();
-        props.addContact({username,phone,location});
+        props.ADD_USER({username,phone,location});
         setLocation("");
         setPhone("");
         setUsername("");
@@ -33,5 +34,8 @@ const ContactFormFu = (props) => {
     </div>
   )
 }
+const mapDispatch = {
+  ADD_USER
+}
 
-export default ContactFormFu
+export default connect(null, mapDispatch)(ContactFormFu)
